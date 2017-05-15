@@ -1,0 +1,29 @@
+<% layout('layout.html') -%>
+<div class="publish-show">
+    <div class="publish-item publish-version">
+        <p class="publish-text">版本号</p>
+        <textarea  name="" placeholder=""></textarea>
+    </div>
+    <div class="publish-item publish-branch">
+        <p class="publish-text">关联分支</p>
+        <ul class="branch-checked">
+        <%for(var x in branchs){%>
+            <li>  
+                <div class="checked-btn" value='0' data-checked='false'><i class="checked-icon hide"></i></div> 
+                <span><%=x%></span>
+            </li>
+        <%}%>
+        </ul>
+    </div>
+    <div class="publish-item publish-explain">
+        <p class="publish-text">版本说明</p>
+        <textarea name="" placeholder=""></textarea>
+    </div>
+    <div class="publish-item publish-time">
+        <p class="publish-text">预计发布时间</p>
+        <textarea name="" placeholder=""></textarea>
+    </div>
+    <div class="publish-item publish-btn">
+        <button class="publish-sure">确认</button>
+    </div>
+</div>

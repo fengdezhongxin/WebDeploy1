@@ -1,0 +1,52 @@
+<% layout('layout.html') -%>
+<% if (!user) { %>
+        <%- partial('login.html') %>
+<% } else { %>
+        <div class="nodata">暂未数据，请添加版本</div>
+        <section class="download-box">
+            <div class="li">
+                <div class="title">版本号</div>
+                <div class="box wrap">
+                    <div class="version select"></div>
+                    <ul class="list">
+                    </ul>
+                    <div class="more"></div>
+                </div>
+            </div>
+            <ul class="commit-list">
+                <li>
+                    
+                </li>
+            </ul>
+            <div class="commit-btn">
+                <div class="btn-pack">生成版本发布包</div>
+                <div class="btn-close">封版</div>
+                <div class="btn-publish">版本发布</div>
+                <div class="btn-nopublish">不发布</div>
+            </div>
+        </section>
+        <div class="download-progin">
+            <div class="progin">
+                <div class="title">打包进度</div>
+                <div class="centent">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="downPackage">
+                <a href="/attachment/:download.rar">点击下载压缩包</a>
+                <br>
+                <a href="/tcj/:web.rar">点击下载压缩包（原文件）</a>
+            </div>
+        </div>
+        <div class="pup-sure">
+            <p class="pop-tit">提示</p>
+            <p class="pop-msg">封版后将不能提交哦</p>
+            <div class="pop-btn">
+                <p class="btn-sure">确认</p>
+                <p class="btn-cancel">取消</p>
+            </div>
+        </div>
+ <% } %>
+<script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+

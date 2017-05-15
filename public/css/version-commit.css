@@ -1,0 +1,238 @@
+/** {
+    font-size: 30px;
+    font-family: Microsoft YaHei, arial, sans-serif;
+    color: #333;
+}*/
+.hide{
+    display:none;
+}
+.box textarea {
+    padding: 25px 40px;
+    width: 520px;
+    border: none;
+    height: 100%;
+    display: block;
+    resize: none;
+    overflow-y: scroll;
+    border-radius: 4px;
+    font-size:14px;
+    line-height:35px;
+}
+textarea.code{
+    min-height:200px;
+}
+.commit-box {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    margin-top: 60px;
+}
+.commit-box .li .title,
+.commit-box .li .box .version,
+.commit-box .li .box .branch,
+.commit-box .li .box li,
+.commit-box .button{
+    font-size:20px;
+    font-family: Microsoft YaHei, arial, sans-serif;
+    color: #333;
+}
+.commit-box .li .title {
+    width: 196px;
+    text-align: justify;
+    text-align-last: justify;
+    margin-right: 15px;
+    float: left;
+    line-height:66px;
+}
+
+.commit-box .li {
+    margin-bottom: 25px;
+}
+
+.commit-box .li.last {
+    margin-top: 70px;
+}
+
+.commit-box .li .box {
+    width: 600px;
+    position: relative;
+    float: right;
+}
+
+.commit-box .li .box ul {
+    position: absolute;
+    width: 456px;
+    z-index: 2;
+    top: 86px;
+    right: 0;
+    display: none;
+    border: 1px solid #ddd;
+}
+
+.commit-box .li .box ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #fff;
+    border-top: none;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -13px;
+}
+
+.commit-box .li .box .more {
+    content: '';
+    display: block;
+    width: 67px;
+    height: 67px;
+    background-color: #d73134;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    pointer-events: none;
+}
+
+.commit-box .li .box .more:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid #fff;
+    display: block;
+}
+
+.commit-box .li .box .more.down:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #fff;
+    border-top: none;
+    display: block;
+}
+
+.commit-box .li .box li {
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    background: #f5f7f6;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+.commit-box .li .box li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1, .5);
+    background-color: #ddd;
+}
+
+.commit-box .li .box li:hover {
+    background-color: #d73134;
+    color: #fff;
+}
+
+.commit-box .li .box .version,
+.commit-box .li .box .branch {
+    text-indent: 180px;
+    line-height: 66px;
+    height: 66px;
+    background: #f5f7f6;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.commit-box .button {
+    width: 240px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #d73134;
+    border-radius: 4px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.commit-box .button.disabled{
+    background-color: #eee;
+    color: #ccc;
+}
+.commit-box .button.apply {
+    float: right;
+}
+
+.pack-progress {
+    margin-top: 35px;
+}
+.pack-progress li{
+    font-size:20px;
+    line-height:40px;
+}
+.pack-progress fieldset {
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 20px 100px;
+    line-height: 60px;
+}
+
+.pack-progress legend {
+    text-align: center;
+    background: #f5f7f6;
+    width: 374px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 4px;
+}
+
+.packdown {
+    display: -webkit-box;
+    padding-top: 57px;
+    padding-bottom: 124px;
+}
+
+.packdown dl {
+    margin: 0 auto;
+}
+
+.packdown dt {
+    width: 61px;
+    height: 55px;
+    background: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QOBaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAxNCA3OS4xNTE0ODEsIDIwMTMvMDMvMTMtMTI6MDk6MTUgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YjdjM2FlMmItY2JiMi00MGJlLWExNzItYjNlNGE4YTdkODA1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQzQUM1ODkyMzE1RDExRTc4MEUxQzU5QzM0RUE0MDMwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQzQUM1ODkxMzE1RDExRTc4MEUxQzU5QzM0RUE0MDMwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE3IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWFmMDBkZTUtOTIwOC00NzljLTgwZTgtMDZiYTgyMTAzZmZjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmI3YzNhZTJiLWNiYjItNDBiZS1hMTcyLWIzZTRhOGE3ZDgwNSIvPiA8L3JkZjpEZXNjcmlwdGlv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);
+    float: left;
+}
+
+.down-code {
+    color: #4598f8;
+    display: block;
+    margin-bottom: 25px;
+    font-size:24px;
+}
+
+.down-source-code {
+    color: #d73134;
+    display: block;
+    font-size:24px;
+}
+
+.packdown dd {
+    margin-left: 116px;
+}

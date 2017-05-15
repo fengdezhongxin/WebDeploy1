@@ -1,0 +1,37 @@
+<% layout('layout.html') -%>
+    <% if (user) { %>
+        <div class="well form-inline center" style="text-align:
+center;">
+            <div class="main_package">
+                <span>文件路径</span>
+                <textarea class="val">
+                </textarea>
+                <div class="info">
+                    <span>说明</span>
+                    <input type="text"></input>
+                </div>
+                <div style="margin-bottom: 30px">
+                    <button class="btn btn-success branches ok">
+                        <i class="icon-comment icon-white">
+           </i> 确定
+                    </button>
+                    <button class="btn btn-success branches submit">
+                        <i class="icon-comment icon-white">
+           </i> 打包
+                    </button>
+                </div>
+                <a href="" class="down" style="display: none;font-size: 38px;font-weight: 800;">下载压缩包</a>
+                <br/>
+                <a href="" class="down" style="display: none;font-size: 38px;font-weight: 800;">下载压缩包(源文件)</a>
+                <div id="note" class="note">
+                    <p>请输入完整路径(模块下)：\zlcftajax\information\live-2\index.htm;多个文件或目录请换行输入</p>
+                </div>
+            </div>
+        </div>
+        <div class="warn">
+            <ul>
+            </ul>
+        </div>
+        <% } else { %>
+            <%- partial('index.html') %>
+                <% } %>

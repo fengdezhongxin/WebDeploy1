@@ -1,0 +1,23 @@
+<% layout('layout.html') -%>
+    <% if (!user) { %>
+        <%- partial('login.html') %>
+            <% } else { %>
+                <div class="version">
+                    <div data-url="/developer">
+                        <img src="./images/down.png">
+                        <p>开发自测打包</p>
+                    </div>
+                    <div data-url="/version/commit">
+                        <img src="./images/down.png">
+                        <p>版本提交</p>
+                    </div>
+                    <div data-url="/versionList">
+                        <img src="./images/down.png">
+                        <p>版本管理</p>
+                    </div>
+                    <div data-url="/versionDownload">
+                        <img src="./images/down.png">
+                        <p>版本发布</p>
+                    </div>
+                </div>
+                <% } %>

@@ -1,0 +1,65 @@
+<% layout('layout.html') -%>
+<section class="commit-box">
+    <div class="li">
+        <div class="title">选择提交版本</div>
+        <div class="box wrap">
+            <div class="version select">
+                --请选择版本--
+            </div>
+            <ul class="list versionList">
+                <%for (x in versionList){%>
+                    <li data-branch="<%=versionList[x].name%>" data-id="<%=versionList[x].id%>">
+                        <%= x %>
+                    </li>
+                    <%}%>
+            </ul>
+            <div class="more"></div>
+        </div>
+    </div>
+    <div class="li">
+        <div class="title">选择分支</div>
+        <div class="box wrap">
+            <div class="branch select">
+                --请选择分支--
+            </div>
+            <ul class="list branchList">
+            </ul>
+            <div class="more"></div>
+        </div>
+    </div>
+    <div class="li">
+        <div class="title">提交说明</div>
+        <div class="box wrap">
+            <textarea class="content" name="content" placeholder="请输入提交说明"></textarea>
+        </div>
+    </div>
+    <div class="li">
+        <div class="title">提交代码列表</div>
+        <div class="box wrap">
+            <textarea class="code" name="code" placeholder="请输入代码列表"></textarea>
+        </div>
+    </div>
+    <div class="li last">
+        <div class="title"></div>
+        <div class="box">
+            <div class="button pack" data-type="test">打包测试</div>
+            <div class="button apply" data-type="apply">提交申请</div>
+        </div>
+    </div>
+</section>
+<section class="pack-progress hide developer">
+    <fieldset class="progin">
+        <legend>打包进度</legend>
+        <ul>
+        </ul>
+    </fieldset>
+    <div class="packdown">
+        <dl class="hide downPackage">
+            <dt></dt>
+            <dd>
+                <a class="down-code" href="/attachment/:download.rar">点击下载压缩包</a>
+                <a class="down-source-code" href="/tcj/:web.rar">点击下载压缩包(源文件)</a>
+            </dd>
+        </dl>
+    </div>
+</section>

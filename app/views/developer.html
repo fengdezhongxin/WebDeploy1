@@ -1,0 +1,48 @@
+<% layout('layout.html') -%>
+    <% if (!user) { %>
+        <%- partial('login.html') %>
+            <% } else { %>
+                <div class="developer">
+                    <div class="dropdown">
+                        <span>选择分支</span>
+                        <div class="click">
+                            <div></div>
+                        </div>
+                        <div class="select">
+                            <p>branches/zlcft-main</p>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="dropdown">
+                            <span>说明</span>
+                            <div class="select">
+                                <input></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pathStr">
+                        <div class="dropdown">
+                            <span>文件列表</span>
+                            <div class="select">
+                                <textarea class="val">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background: red">确定</button>
+                    <div class="progin">
+                        <div class="title">打包进度</div>
+                        <div class="centent">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="downPackage">
+                        <a href="/attachment/:download.rar">点击下载压缩包</a>
+                        <br>
+                        <a href="/tcj/:web.rar">点击下载压缩包（原文件）</a>
+                    </div>
+                </div>
+                <% } %>

@@ -1,0 +1,108 @@
+﻿var path = require("path");
+var svnPath = path.join('D:/web/zlcft_web/');
+module.exports = {
+    // svn 目录
+    svn: {
+        path: svnPath
+    },
+    // 分支目录配置
+    branches: {
+        'trunk': path.join(svnPath, 'trunk/'),
+        'branches': path.join(svnPath, 'branches/'),
+        'trunk-3g': path.join(svnPath, 'trunk/trunk-3g/'),
+        'trunk-active': path.join(svnPath, 'trunk/trunk-activity/'),
+    },
+    // 用户权限配置
+    user: {
+        // 用户等级
+        level: {
+            developer: 10,
+            commiter: 20,
+            releaser: 30,
+            admin: 40
+        },
+        //用户含有数据里面一种即有权限
+        roles: {
+            //打包自测
+            pack: [10],
+            //版本提交
+            versionCommit: [20],
+            //版本管理
+            versionManagement: [20, 30, 40],
+            //版本发布 		
+            release: [30, 40],
+            //新增版本
+            addVersion: [30, 40],
+            //当前版本
+            currentVersion: [20, 30, 40],
+            //历史版本
+            historyVersion: [20, 30, 40],
+                //未发布编辑
+            editNotReleased: [30, 40],
+            //已发布编辑
+            editRelease: [40]
+        }
+        //1、开发自测打包：developer权限
+        //2、版本提交：commiter权限
+        //3、版本管理：commiter权限，admin和releaser权限看到的有区别
+        //4、版本发布：releaser权限
+        //5、版本管理：commiter权限仅可以看,releaser可以编辑未发布的，admin可以编辑已发布的    	
+    },
+    // 文件及压缩包大目录
+    upload: {
+        path: path.join(__dirname, '../../upload/') //用户打包文件所在目录
+    },
+    // python 文件目录
+    python: {
+        path: path.join(__dirname, '../../python/') //python文件所在路径
+    },
+    // 文件日志地址
+    logs: {
+        path: path.join(__dirname, '../../logs/') //python文件所在路径	
+    },
+    // 数据库配置
+    database: {
+        host: 'localhost', // 数据库地址
+        db: 'microblog', // 数据库名
+        port: 27017 // 数据库端口号
+    },
+    // 邮箱配置
+    email: {
+        // 发件邮箱 
+        from: {
+            service: 'QQ',
+            user: '752044172@qq.com', // 发件人邮箱
+            pass: 'ymyfhsvprrjnbecb', // 发件人密码
+        },
+        // 接收邮箱
+        to: ['sbj430@qq.com'] // 收件人列表
+    },
+    // 打包方案
+    plan: {
+        //打包步骤
+        type: {
+            0: {
+                name: 'updateSvn',
+                text: '更新SVN'
+            },
+            1: {
+                name: 'findFiles',
+                text: '查找文件'
+            },
+            2: {
+                name: 'encrypt',
+                text: '加密文件'
+            },
+            3: {
+                name: 'pack',
+                text: '打包'
+            }
+        },
+        //打包过程
+        process: {
+            normal: [0, 1, 2, 3], //默认方案
+            mobile: [], //3g 方案
+            wxmina: []
+        }
+    }
+}

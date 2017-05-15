@@ -1,0 +1,277 @@
+/*版本发布页面*/
+.publish-show {
+    margin: 0 auto;
+}
+p.publish-text {
+    color: #333333;
+    font-size: 30px;
+    float: left;
+    text-align: justify;
+    text-align-last: justify;
+    width: 200px;
+    height: 68px;
+    line-height: 68px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+}
+textarea,.branch-checked{
+    width: 560px;
+    height: 28px;
+    margin-bottom: 0px;
+    color: #b8b8b8;
+    font-size: 30px;
+    border: none;
+    padding: 0px;
+    padding: 20px;
+    line-height: 28px;
+}
+div.publish-explain{
+	height: 240px;
+}
+.publish-explain textarea{
+	height: 138px
+}
+.public-version p.publish-text{
+
+}
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border-color: #fff;
+    background: transparent;
+}
+.branch-checked span{
+    font-size: 30px;
+    color: #333;
+    line-height: 33px;
+    padding-left: 10px;
+}
+.branch-checked{
+	float: left;
+    height: 80px;
+    margin:0px;
+    padding: 20px 0px;
+}
+.branch-checked li{
+    float: left;
+    width: 50%;
+    display: block;
+    height: 45px;
+}
+.publish-item {
+    height: 90px;
+    width: 900px;
+    margin: 0 auto;
+}
+.publish-btn button{
+	width: 360px;
+    height: 64px;
+    font-size: 30px;
+    line-height: 64px;
+    color: #fff;
+    background: #D92F2E;
+    border: none;
+}
+.publish-btn{
+	width: 360px;
+	margin: 0 auto;
+}
+.checked-btn {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: 1px #fff solid;
+}
+i.checked-icon {
+    background: url('../images/glyphicons-halflings-white.png') -280px 9px no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+/*版本下载页面*/
+.download-box {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    margin-top: 60px;
+}
+
+.download-box .li .title {
+    width: 196px;
+    text-align: justify;
+    text-align-last: justify;
+    margin-right: 15px;
+    float: left;
+    font-size: 30px;
+    color: #333;
+    height: 68px;
+    line-height: 68px;
+}
+
+.download-box .li {
+    margin-bottom: 25px;
+}
+
+.download-box .li .box {
+    width: 600px;
+    position: relative;
+    float: right;
+}
+
+.download-box .li .box ul {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    border-top: 1px solid #ccc;
+    top: 66px;
+    display: none;
+    margin: 0px;
+}
+
+.download-box .li .box .more {
+    content: '';
+    display: block;
+    width: 67px;
+    height: 67px;
+    background-color: #d73134;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    pointer-events: none;
+}
+
+.download-box .li .box .more:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid #fff;
+    display: block;
+}
+.download-box .li .box .more.down:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #fff;
+    border-top: none;
+    display: block;     
+} 
+.download-box .li .box li {
+    height: 66px;
+    line-height: 66px;
+    text-indent: 180px; 
+    background: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: block;
+    color: #333;
+    font-size: 30px;
+}
+.download-box .li .box .version{        
+    text-indent: 180px;
+    line-height: 66px;
+    height: 66px;
+    background: #fff;        
+    cursor: pointer;
+    border-radius:4px;
+    color: #333;
+    font-size: 30px;
+}
+ul.commit-list {
+    margin: 0px;
+    width: 811px;
+}
+ul.commit-list li {
+    display: block;
+    border: 2px #999 solid;
+    margin-bottom: 24px;
+}
+.commit-tit {
+    height: 50px;
+    border-bottom: 2px #999 solid;
+    line-height: 50px;
+    font-size: 30px;
+    color: #333;
+}
+.commit-tit span:nth-child(1){
+    width: 45%;
+    display: block;
+    float: left;  
+    padding-left: 15px;
+}
+.commit-tit span:nth-child(2){
+    width: 45%;
+    display: block;
+    float: left;
+}
+.commit-tit span:nth-child(3){
+    display: block;
+    background: url('../images/delete.png') no-repeat;
+    float: left;
+    width: 34px;
+    height: 34px;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+.commit-filelist {
+    font-size: 28px;
+    color: #333;
+    padding: 20px 20px 20px 40px;
+}
+.btn-pack {
+    background: #D92F2E;
+    width: 270px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+}
+.btn-close {
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+    background: #D92F2E;
+    margin: 0px 70px;
+}
+.btn-publish {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    background: #D92F2E;
+    width: 270px;
+}
+.commit-btn {
+    width: 811px;
+    color: #fff;
+    font-size: 30px;
+}
+.btn-nopublish {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: #4598f8;
+    text-decoration: underline;
+}
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

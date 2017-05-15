@@ -1,0 +1,194 @@
+.developer {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+}
+
+.developer>div {
+    margin-bottom: 20px;
+}
+
+.developer .select {
+    display: inline-block;
+    width: 700px;
+    position: relative;
+    height: 74px;
+    background-color: #fff;
+    line-height: 74px;
+}
+
+.developer .dropdown span {
+    margin-right: 80px;
+    display: inline-block;
+    width: 112px;
+}
+
+.developer .dropdown .click {
+    float: right;
+    height: 74px;
+    width: 78px;
+    background-color: red;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.developer .dropdown .click>div {
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: none;
+}
+
+.developer .dropdown .click .active {
+    border-bottom: 20px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: none;
+}
+
+.developer .select ul {
+    position: absolute;
+    list-style: none;
+    -webkit-padding-start: 0px;
+    right: -78px;
+    width: 458px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #888;
+    border-radius: 5px;
+    top: 90px;
+    z-index: 10;
+    display: none;
+}
+
+.developer .select ul:after {
+    content: "";
+    position: absolute;
+    right: 32px;
+    border-bottom: 20px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: none;
+    top: -14px;
+    z-index: -1;
+}
+
+.developer .select ul li {
+    height: 54px;
+    line-height: 54px;
+    border-top: 1px solid #ccc;
+}
+
+.developer .select ul li:first-child {
+    border-top: none;
+}
+
+.developer .select ul li.active {
+    background: red;
+}
+
+.developer .info input {
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+}
+
+.developer .info .select,
+.developer .pathStr .select {
+    width: 775px;
+}
+
+.developer .pathStr textarea {
+    width: 762px;
+    height: 220px;
+}
+
+.developer .pathStr span {
+    position: relative;
+    top: -100px;
+}
+
+.developer .pathStr .select {
+    height: 220px;
+}
+
+.developer .btn-primary {
+    width: 362px;
+    height: 70px;
+    font-size: 28px;
+    margin-top: 34px;
+    margin-left: 180px;
+}
+
+.developer .progin {
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.developer .progin .title {
+    font-size: 24px;
+    width: 232px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px #888;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.developer .progin ul {
+    width: 712px;
+    border: 2px solid #fff;
+    text-align: left;
+    padding: 0 0 50px 50px;
+    font-size: 20px;
+    position: relative;
+    top: -21px;
+    width: 1000px;
+}
+
+.developer .progin ul li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.developer .select ul li:active {
+    background: red;
+}
+
+.developer .progin ul li:nth-of-type(1) {
+    margin-top: 50px;
+}
+
+.downPackage {
+    margin-top: 20px;
+    width: 400px;
+    background: url(../images/download.png);
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    display: none;
+}
+
+.downPackage a {
+    display: block;
+    color: #4096FB;
+    padding-bottom: 20px;
+    text-align: left;
+}

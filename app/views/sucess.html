@@ -1,0 +1,34 @@
+<% layout('layout.html') -%>
+<style type="text/css">
+    .sucess-msg{
+        font-size: 30px;
+        color: #000;
+        text-align: center;
+        width: 80%;
+        margin:200px auto;
+    }
+</style>
+<section class="download-sucess">
+   <div class="sucess-msg"></div>
+</section>
+<script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    var from = getUrlParams('from');
+    //获取url参数
+    function getUrlParams(paramName){
+        var reg = new RegExp("(^|&)" + paramName + "=([^&]*)(&|$)", "i"),
+            arr = window.location.search.substr(1).match(reg);
+        if (arr) {
+            return arr[2];
+        }
+        return null;
+    }
+    if(from == 1){
+       $('.sucess-msg').html("发布成功，邮件已发送请注意查收");
+    }else{
+       $('.sucess-msg').html("该版本已经不能发布哦，已视为废弃！");
+    }
+    
+</script>
+
+

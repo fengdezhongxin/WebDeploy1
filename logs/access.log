@@ -1,0 +1,5 @@
+[2017-05-12 17:17:07.323] [INFO] normal - ::ffff:127.0.0.1 - - "GET /developerData HTTP/1.1" 304 - "http://localhost:3002/developer" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+[2017-05-12 17:17:18.666] [INFO] normal - ::ffff:127.0.0.1 - - "GET /developer HTTP/1.1" 304 - "http://localhost:3002/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+[2017-05-12 17:17:18.712] [INFO] normal - ::1 - - "GET /developerData HTTP/1.1" 304 - "http://localhost:3002/developer" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+[2017-05-12 17:17:34.914] [INFO] normal - ::1 - - "GET /developer HTTP/1.1" 304 - "http://localhost:3002/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+[2017-05-12 17:17:34.995] [INFO] normal - ::1 - - "GET /developerData HTTP/1.1" 304 - "http://localhost:3002/developer" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
